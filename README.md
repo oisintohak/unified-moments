@@ -9,9 +9,11 @@
 `mkdir frontend && cd frontend`
 2. run create-react-app command with the code institute template  
 [create-react-app ci template](https://github.com/Code-Institute-Org/cra-template-moments)
-3. add proxy url to package.json  
+3. remove the .git submodule, .gitignore and README.md  
+`rm -rf .git .gitignore README.md`
+4. add proxy url to package.json  
 `"proxy": "http://localhost:8000"`
-4. start the react development server  
+5. start the react development server  
 `npm start`
 
 <br/>
@@ -28,10 +30,8 @@
 
 1. create a staticfiles folder in the project root directory  
 `mkdir staticfiles`
-
 2. collect admin and rest framework staticfiles  
 `python3 manage.py collectstatic`
-
 3. cd to the frontend directory and compile the react app  
 `npm run build && mv build ../staticfiles/.`
  
