@@ -1,8 +1,4 @@
-## file changes
-- yet to be documented
 
-
-<br/>
 
 ## Setup react for development
 1. create a frontend directory  
@@ -51,4 +47,3 @@
 - CLIENT_ORIGIN
 - DATABASE_URL
 - CLOUDINARY_URL
-- CLOUDINARY_SECRET
