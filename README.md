@@ -40,6 +40,15 @@
 
 <br/>
 
+## Development Environment Variables
+
+- DEBUG
+- SECRET_KEY
+- ALLOWED_HOST
+- CLIENT_ORIGIN
+- DATABASE_URL
+- CLOUDINARY_URL
+
 ## Production Environment Variables
 
 - SECRET_KEY
