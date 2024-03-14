@@ -3,6 +3,8 @@ import { axiosReq } from "../api/axiosDefaults";
 
 export const fetchMoreData = async (resource, setResource) => {
   try {
+    const { pathname, search } = new URL(resource.next);
+    resource.next = `${pathname}${search}`.replaceAll('/api', '');
     const { data } = await axiosReq.get(resource.next);
     setResource((prevResource) => ({
       ...prevResource,
